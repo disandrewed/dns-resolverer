@@ -3,7 +3,6 @@ from socket import gethostbyname, gaierror
 import sys
 import struct
 import helper
-import copy
 
 #get flags and put into dictionary
 def getFlags(dns_response):
@@ -173,7 +172,6 @@ if __name__ == '__main__':
             serverstoQuery.pop()
             
             #intialise socket and send 
-            
             dnsSocket.settimeout(1)
             print('sending to:' + dnsServer + '!')
             try:

@@ -1,6 +1,5 @@
 from socket import *
 import random
-import sys
 
 
 def queryMake(site, qtype):
